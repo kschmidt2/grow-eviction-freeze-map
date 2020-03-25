@@ -275,6 +275,12 @@
   .highcharts-data-label {
     font-size: 0.9em;
     font-weight: bold;
+    & text {
+      @include x-small {
+        font-size:9px !important;
+        transform: translate(0,-2px) !important;
+      }
+    }
   }
   
   .highcharts-data-label-box {
